@@ -88,14 +88,14 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 
 -->
 <body>
-<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2019/about">[About]</a></li><li><a href="/2019/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2019/auth/login">[Log In]</a></li></ul></nav></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap"></span><a href="/2019">2019</a><span class="title-event-wrap"></span></h1><nav><ul><li><a href="/2019">[Calendar]</a></li><li><a href="/2019/support">[AoC++]</a></li><li><a href="/2019/sponsors">[Sponsors]</a></li><li><a href="/2019/leaderboard">[Leaderboard]</a></li><li><a href="/2019/stats">[Stats]</a></li></ul></nav></div></header>
+<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2019/about">[About]</a></li><li><a href="/2019/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2019/settings">[Settings]</a></li><li><a href="/2019/auth/logout">[Log Out]</a></li></ul></nav><div class="user">Sonnenhut <a href="/2019/support" class="supporter-badge" title="Advent of Code Supporter">(AoC++)</a> <span class="star-count">50*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap"></span><a href="/2019">2019</a><span class="title-event-wrap"></span></h1><nav><ul><li><a href="/2019">[Calendar]</a></li><li><a href="/2019/support">[AoC++]</a></li><li><a href="/2019/sponsors">[Sponsors]</a></li><li><a href="/2019/leaderboard">[Leaderboard]</a></li><li><a href="/2019/stats">[Stats]</a></li></ul></nav></div></header>
 
 <div id="sidebar">
-<div id="sponsor"><div class="quiet">Our <a href="/2019/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://www.codethink.co.uk/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Codethink Ltd.</a> - Codethink is a software services company, expert in the use of Open Source technologies for systems software engineering.</div></div>
+<div id="sponsor"><div class="quiet">Our <a href="/2019/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://freelancer.beastiejob.com/adventofcode" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">BeastieJob.com</a> - Freelancers, helping Santa for free? Yes can do! Join us!</div></div>
 </div><!--/sidebar-->
 
 <main>
-<article class="day-desc"><h2>--- Day 4: Secure Container ---</h2><p>You arrive at the Venus fuel depot only to discover it's protected by a password.  The Elves had written the password on a sticky note, but someone <span title="Look on the bright side - isn't it more secure if nobody knows the password?">threw it out</span>.</p>
+<style>article *[title]{border-bottom:1px dotted #ffff66;}</style><article class="day-desc"><h2>--- Day 4: Secure Container ---</h2><p>You arrive at the Venus fuel depot only to discover it's protected by a password.  The Elves had written the password on a sticky note, but someone <span title="Look on the bright side - isn't it more secure if nobody knows the password?">threw it out</span>.</p>
 <p>However, they do remember a few key facts about the password:</p>
 <ul>
 <li>It is a six-digit number.</li>
@@ -111,8 +111,22 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 </ul>
 <p><em>How many different passwords</em> within the range given in your puzzle input meet these criteria?</p>
 </article>
-<p>To play, please identify yourself via one of these services:</p>
-<p><a href="/auth/github">[GitHub]</a> <a href="/auth/google">[Google]</a> <a href="/auth/twitter">[Twitter]</a> <a href="/auth/reddit">[Reddit]</a> <span class="quiet">- <a href="/about#faq_auth">[How Does Auth Work?]</a></span></p>
+<p>Your puzzle answer was <code>1686</code>.</p><article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>An Elf just remembered one more important detail: the two adjacent matching digits <em>are not part of a larger group of matching digits</em>.</p>
+<p>Given this additional criterion, but still ignoring the range rule, the following are now true:</p>
+<ul>
+<li><code>112233</code> meets these criteria because the digits never decrease and all repeated digits are exactly two digits long.</li>
+<li><code>123<em>444</em></code> no longer meets the criteria (the repeated <code>44</code> is part of a larger group of <code>444</code>).</li>
+<li><code>111122</code> meets the criteria (even though <code>1</code> is repeated more than twice, it still contains a double <code>22</code>).</li>
+</ul>
+<p><em>How many different passwords</em> within the range given in your puzzle input meet all of the criteria?</p>
+</article>
+<p>Your puzzle answer was <code>1145</code>.</p><p class="day-success">Both parts of this puzzle are complete! They provide two gold stars: **</p>
+<p>At this point, all that is left is for you to <a href="/2019">admire your Advent calendar</a>.</p>
+<p>Your puzzle input was <code class="puzzle-input">168630-718098</code>.</p>
+<p>You can also <span class="share">[Share<span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+%22Secure+Container%22+%2D+Day+4+%2D+Advent+of+Code+2019&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2019%2Fday%2F4&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=I%27ve+completed+%22Secure+Container%22+%2D+Day+4+%2D+Advent+of+Code+2019+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2019%2Fday%2F4'}else{return false;}" target="_blank">Mastodon</a
+></span>]</span> this puzzle.</p>
 </main>
 
 <!-- ga -->

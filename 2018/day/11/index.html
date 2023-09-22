@@ -88,14 +88,14 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 
 -->
 <body>
-<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2018/about">[About]</a></li><li><a href="/2018/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2018/auth/login">[Log In]</a></li></ul></nav></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/^</span><a href="/2018">2018</a><span class="title-event-wrap">$/</span></h1><nav><ul><li><a href="/2018">[Calendar]</a></li><li><a href="/2018/support">[AoC++]</a></li><li><a href="/2018/sponsors">[Sponsors]</a></li><li><a href="/2018/leaderboard">[Leaderboard]</a></li><li><a href="/2018/stats">[Stats]</a></li></ul></nav></div></header>
+<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2018/about">[About]</a></li><li><a href="/2018/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2018/settings">[Settings]</a></li><li><a href="/2018/auth/logout">[Log Out]</a></li></ul></nav><div class="user">Sonnenhut <a href="/2018/support" class="supporter-badge" title="Advent of Code Supporter">(AoC++)</a> <span class="star-count">50*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/^</span><a href="/2018">2018</a><span class="title-event-wrap">$/</span></h1><nav><ul><li><a href="/2018">[Calendar]</a></li><li><a href="/2018/support">[AoC++]</a></li><li><a href="/2018/sponsors">[Sponsors]</a></li><li><a href="/2018/leaderboard">[Leaderboard]</a></li><li><a href="/2018/stats">[Stats]</a></li></ul></nav></div></header>
 
 <div id="sidebar">
-<div id="sponsor"><div class="quiet">Our <a href="/2018/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://www.wearedevelopers.com/world-congress/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">WeAreDevelopers</a> - Use &quot;AOC-25&quot;, save EUR 25 and join 10^4 devs on June 6-7 at the WeAreDevelopers World Congress in Berlin ticket.get(now)</div></div>
+<div id="sponsor"><div class="quiet">Our <a href="/2018/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://clubhouse.io/?utm_source=spon&amp;utm_medium=ch&amp;utm_campaign=aoc2018" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Clubhouse</a> - The first project management platform for software development that brings everyone on every team together to build better products. AoC participants get two free months by signing up at r.clbh.se/mze9q9P Also, we&apos;re hiring!</div></div>
 </div><!--/sidebar-->
 
 <main>
-<article class="day-desc"><h2>--- Day 11: Chronal Charge ---</h2><p>You watch the Elves and their sleigh fade into the distance as they head toward the North Pole.</p>
+<style>article *[title]{border-bottom:1px dotted #ffff66;}</style><article class="day-desc"><h2>--- Day 11: Chronal Charge ---</h2><p>You watch the Elves and their sleigh fade into the distance as they head toward the North Pole.</p>
 <p>Actually, you're the one fading. The <span title="wheeeeeeeeeeeeeeeeee">falling sensation</span> returns.</p>
 <p>The low fuel warning light is illuminated on your wrist-mounted device. Tapping it once causes it to project a hologram of the situation: a <em>300x300</em> grid of fuel cells and their current power levels, some negative. You're not sure what negative power means in the context of time travel, but it can't be good.</p>
 <p>Each fuel cell has a coordinate ranging <em>from 1 to 300</em> in both the X (horizontal) and Y (vertical) direction.  In <code>X,Y</code> notation, the top-left cell is <code>1,1</code>, and the top-right cell is <code>300,1</code>.</p>
@@ -142,8 +142,22 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 </code></pre>
 <p><em>What is the <code>X,Y</code> coordinate of the top-left fuel cell of the 3x3 square with the largest total power?</em></p>
 </article>
-<p>To play, please identify yourself via one of these services:</p>
-<p><a href="/auth/github">[GitHub]</a> <a href="/auth/google">[Google]</a> <a href="/auth/twitter">[Twitter]</a> <a href="/auth/reddit">[Reddit]</a> <span class="quiet">- <a href="/about#faq_auth">[How Does Auth Work?]</a></span></p>
+<p>Your puzzle answer was <code>21,77</code>.</p><article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>You discover a dial on the side of the device; it seems to let you select a square of <em>any size</em>, not just 3x3. Sizes from 1x1 to 300x300 are supported.</p>
+<p>Realizing this, you now must find the <em>square of any size with the largest total power</em>. Identify this square by including its size as a third parameter after the top-left coordinate: a 9x9 square with a top-left corner of <code>3,5</code> is identified as <code>3,5,9</code>.</p>
+<p>For example:</p>
+<ul>
+<li>For grid serial number <code>18</code>, the largest total square (with a total power of <code>113</code>) is 16x16 and has a top-left corner of <code>90,269</code>, so its identifier is <code><em>90,269,16</em></code>.</li>
+<li>For grid serial number <code>42</code>, the largest total square (with a total power of <code>119</code>) is 12x12 and has a top-left corner of <code>232,251</code>, so its identifier is <code><em>232,251,12</em></code>.</li>
+</ul>
+<p><em>What is the <code>X,Y,size</code> identifier of the square with the largest total power?</em></p>
+</article>
+<p>Your puzzle answer was <code>224,222,27</code>.</p><p class="day-success">Both parts of this puzzle are complete! They provide two gold stars: **</p>
+<p>At this point, all that is left is for you to <a href="/2018">admire your Advent calendar</a>.</p>
+<p>Your puzzle input was <code class="puzzle-input">3999</code>.</p>
+<p>You can also <span class="share">[Share<span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+%22Chronal+Charge%22+%2D+Day+11+%2D+Advent+of+Code+2018&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2018%2Fday%2F11&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=I%27ve+completed+%22Chronal+Charge%22+%2D+Day+11+%2D+Advent+of+Code+2018+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2018%2Fday%2F11'}else{return false;}" target="_blank">Mastodon</a
+></span>]</span> this puzzle.</p>
 </main>
 
 <!-- ga -->

@@ -88,14 +88,14 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 
 -->
 <body>
-<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2022/about">[About]</a></li><li><a href="/2022/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2022/auth/login">[Log In]</a></li></ul></nav></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/*</span><a href="/2022">2022</a><span class="title-event-wrap">*/</span></h1><nav><ul><li><a href="/2022">[Calendar]</a></li><li><a href="/2022/support">[AoC++]</a></li><li><a href="/2022/sponsors">[Sponsors]</a></li><li><a href="/2022/leaderboard">[Leaderboard]</a></li><li><a href="/2022/stats">[Stats]</a></li></ul></nav></div></header>
+<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2022/about">[About]</a></li><li><a href="/2022/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2022/settings">[Settings]</a></li><li><a href="/2022/auth/logout">[Log Out]</a></li></ul></nav><div class="user">Sonnenhut <a href="/2022/support" class="supporter-badge" title="Advent of Code Supporter">(AoC++)</a> <span class="star-count">50*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/^</span><a href="/2022">2022</a><span class="title-event-wrap">$/</span></h1><nav><ul><li><a href="/2022">[Calendar]</a></li><li><a href="/2022/support">[AoC++]</a></li><li><a href="/2022/sponsors">[Sponsors]</a></li><li><a href="/2022/leaderboard">[Leaderboard]</a></li><li><a href="/2022/stats">[Stats]</a></li></ul></nav></div></header>
 
 <div id="sidebar">
-<div id="sponsor"><div class="quiet">Our <a href="/2022/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://sentry.io/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Sentry.io</a> - More than 3.5 million developers across 85,000 organizations ship better software, faster, with Sentry. What are you waiting for?</div></div>
+<div id="sponsor"><div class="quiet">Our <a href="/2022/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://www.accenture.com/us-en/industries/afs-index" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Accenture Federal Services</a> - Technology &amp; ingenuity moving missions forward – come solve problems with us. Hiring software engineers, developers, and more now. Refer someone to earn up to $20K.</div></div>
 </div><!--/sidebar-->
 
 <main>
-<article class="day-desc"><h2>--- Day 24: Blizzard Basin ---</h2><p>With everything replanted for next year (and with elephants and monkeys to tend the grove), you and the Elves leave for the extraction point.</p>
+<style>article *[title]{border-bottom:1px dotted #ffff66;}</style><article class="day-desc"><h2>--- Day 24: Blizzard Basin ---</h2><p>With everything replanted for next year (and with elephants and monkeys to tend the grove), you and the Elves leave for the extraction point.</p>
 <p>Partway up the mountain that shields the grove is a flat, open area that serves as the extraction point. It's a bit of a climb, but nothing the expedition can't handle.</p>
 <p>At least, that would normally be true; now that the mountain is covered in snow, things have become more difficult than the Elves are used to.</p>
 <p>As the expedition reaches a valley that must be traversed to reach the extraction site, you find that strong, turbulent winds are pushing small <em>blizzards</em> of snow and sharp ice around the valley. It's a good thing everyone packed warm clothes! To make it across safely, you'll need to find a way to avoid them.</p>
@@ -319,8 +319,19 @@ Minute 18, move down:
 </code></pre>
 <p><em>What is the fewest number of minutes required to avoid the blizzards and reach the goal?</em></p>
 </article>
-<p>To play, please identify yourself via one of these services:</p>
-<p><a href="/auth/github">[GitHub]</a> <a href="/auth/google">[Google]</a> <a href="/auth/twitter">[Twitter]</a> <a href="/auth/reddit">[Reddit]</a> <span class="quiet">- <a href="/about#faq_auth">[How Does Auth Work?]</a></span></p>
+<p>Your puzzle answer was <code>251</code>.</p><article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>As the expedition reaches the far side of the valley, one of the Elves looks especially dismayed:</p>
+<p>He <em>forgot his snacks</em> at the entrance to the valley!</p>
+<p>Since you're so good at dodging blizzards, the Elves humbly request that you go back for his snacks. From the same initial conditions, how quickly can you make it from the start to the goal, then back to the start, then back to the goal?</p>
+<p>In the above example, the first trip to the goal takes <code>18</code> minutes, the trip back to the start takes <code>23</code> minutes, and the trip back to the goal again takes <code>13</code> minutes, for a total time of <code><em>54</em></code> minutes.</p>
+<p><em>What is the fewest number of minutes required to reach the goal, go back to the start, then reach the goal again?</em></p>
+</article>
+<p>Your puzzle answer was <code>758</code>.</p><p class="day-success">Both parts of this puzzle are complete! They provide two gold stars: **</p>
+<p>At this point, all that is left is for you to <a href="/2022">admire your Advent calendar</a>.</p>
+<p>If you still want to see it, you can <a href="24/input" target="_blank">get your puzzle input</a>.</p>
+<p>You can also <span class="share">[Share<span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+%22Blizzard+Basin%22+%2D+Day+24+%2D+Advent+of+Code+2022&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2022%2Fday%2F24&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=I%27ve+completed+%22Blizzard+Basin%22+%2D+Day+24+%2D+Advent+of+Code+2022+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2022%2Fday%2F24'}else{return false;}" target="_blank">Mastodon</a
+></span>]</span> this puzzle.</p>
 </main>
 
 <!-- ga -->

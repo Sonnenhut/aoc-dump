@@ -88,10 +88,10 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 
 -->
 <body>
-<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2016/about">[About]</a></li><li><a href="/2016/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2016/auth/login">[Log In]</a></li></ul></nav></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">0x0000|</span><a href="/2016">2016</a><span class="title-event-wrap"></span></h1><nav><ul><li><a href="/2016">[Calendar]</a></li><li><a href="/2016/support">[AoC++]</a></li><li><a href="/2016/sponsors">[Sponsors]</a></li><li><a href="/2016/leaderboard">[Leaderboard]</a></li><li><a href="/2016/stats">[Stats]</a></li></ul></nav></div></header>
+<header><div><h1 class="title-global"><a href="/">Advent of Code</a></h1><nav><ul><li><a href="/2016/about">[About]</a></li><li><a href="/2016/events">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="/2016/settings">[Settings]</a></li><li><a href="/2016/auth/logout">[Log Out]</a></li></ul></nav><div class="user">Sonnenhut</div></div><div><h1 class="title-event">&nbsp;&nbsp;<span class="title-event-wrap">{year=&gt;</span><a href="/2016">2016</a><span class="title-event-wrap">}</span></h1><nav><ul><li><a href="/2016">[Calendar]</a></li><li><a href="/2016/support">[AoC++]</a></li><li><a href="/2016/sponsors">[Sponsors]</a></li><li><a href="/2016/leaderboard">[Leaderboard]</a></li><li><a href="/2016/stats">[Stats]</a></li></ul></nav></div></header>
 
 <div id="sidebar">
-<div id="sponsor"><div class="quiet">Our <a href="/2016/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="http://www.aandkrentals.net/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">A&amp;K Rentals</a> - Affordable, high-quality homes just north of Kansas City.</div></div>
+<div id="sponsor"><div class="quiet">Our <a href="/2016/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://www.detroitlabs.com/careers" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Detroit Labs</a> - Build beautiful mobile apps.</div></div>
 </div><!--/sidebar-->
 
 <main>
@@ -101,8 +101,12 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 <p>In a valid triangle, the sum of any two sides must be larger than the remaining side.  For example, the "triangle" given above is <span title="Unless it's on a sphere!">impossible</span>, because <code>5 + 10</code> is not larger than <code>25</code>.</p>
 <p>In your puzzle input, <em>how many</em> of the listed triangles are <em>possible</em>?</p>
 </article>
-<p>To play, please identify yourself via one of these services:</p>
-<p><a href="/auth/github">[GitHub]</a> <a href="/auth/google">[Google]</a> <a href="/auth/twitter">[Twitter]</a> <a href="/auth/reddit">[Reddit]</a> <span class="quiet">- <a href="/about#faq_auth">[How Does Auth Work?]</a></span></p>
+<p>To begin, <a href="3/input" target="_blank">get your puzzle input</a>.</p>
+<form method="post" action="3/answer"><input type="hidden" name="level" value="1"/><p>Answer: <input type="text" name="answer" autocomplete="off"/> <input type="submit" value="[Submit]"/></p></form>
+<p>You can also <span class="share">[Share<span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=%22Squares+With+Three+Sides%22+%2D+Day+3+%2D+Advent+of+Code+2016&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2016%2Fday%2F3&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=%22Squares+With+Three+Sides%22+%2D+Day+3+%2D+Advent+of+Code+2016+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2016%2Fday%2F3'}else{return false;}" target="_blank">Mastodon</a
+></span>]</span> this puzzle.</p>
 </main>
 
 <!-- ga -->
